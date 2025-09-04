@@ -1,0 +1,66 @@
+{
+  "title": "Мої проекти 💼",
+  "subtitle": "Ось кілька проектів, над якими я працювала",
+  "projects": [
+    {
+      "id": 1,
+      "title": "E-commerce Platform",
+      "description": "Сучасний інтернет-магазин з React та Node.js",
+      "technologies": ["React", "Node.js", "MongoDB", "Stripe"],
+      "image": "/images/project-ecommerce.jpg",
+      "link": "https://github.com/annbalias/ecommerce-platform",
+      "demoLink": "https://ecommerce-demo.annbalias.dev",
+      "features": [
+        "Корзина покупок",
+        "Система платежів",
+        "Адмін панель",
+        "Пошук та фільтрація"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Task Management App",
+      "description": "Додаток для управління завданнями з drag-and-drop",
+      "technologies": ["React", "TypeScript", "Firebase"],
+      "image": "/images/project-taskmanager.jpg",
+      "link": "https://github.com/annbalias/task-manager",
+      "demoLink": "https://task-manager.annbalias.dev",
+      "features": [
+        "Drag & Drop інтерфейс",
+        "Реальний час",
+        "Командна робота",
+        "Сповіщення"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Weather Dashboard",
+      "description": "Інформаційна панель погоди з API інтеграцією",
+      "technologies": ["React", "OpenWeather API", "Chart.js"],
+      "image": "/images/project-weather.jpg",
+      "link": "https://github.com/annbalias/weather-dashboard",
+      "demoLink": "https://weather.annbalias.dev",
+      "features": [
+        "Прогноз погоди",
+        "Інтерактивні графіки",
+        "Геолокація",
+        "Анімації"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Portfolio Website",
+      "description": "Особистий сайт-портфоліо з неоновим дизайном",
+      "technologies": ["React", "CSS3", "JavaScript"],
+      "image": "/images/project-portfolio.jpg",
+      "link": "https://github.com/annbalias/portfolio",
+      "demoLink": "https://annbalias.dev",
+      "features": [
+        "Адаптивний дизайн",
+        "Неонові ефекти",
+        "Анімації",
+        "SEO оптимізація"
+      ]
+    }
+  ]
+}

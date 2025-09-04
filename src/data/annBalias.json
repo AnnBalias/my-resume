@@ -1,0 +1,29 @@
+{
+  "personalInfo": {
+    "avatar": "/src/assets/images/annbalias.jpg",
+    "name": "Anna Balias",
+    "title": "FullStack Developer"
+  },
+  "contactInfo": {
+    "email": "annbalias34@gmail.com",
+    "phone": ["+380974611734", "+380664093141" ],
+    "location": "Україна"
+  },
+  "socialLinks": [
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/annbalias",
+      "icon": "💼"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com/annbalias",
+      "icon": "🐙"
+    },
+    {
+      "name": "Telegram",
+      "url": "https://t.me/annbalias",
+      "icon": "📱"
+    }
+  ]
+}

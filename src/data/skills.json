@@ -1,0 +1,85 @@
+{
+  "title": "Мої скіли ⚡",
+  "subtitle": "Технології та інструменти, які я використовую",
+  "skillCategories": [
+    {
+      "category": "Tech Skills",
+      "skills": [
+        {
+          "name": "HTML5/CSS3",
+          "icon": "🌐"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "🟨"
+        },
+        {
+          "name": "TypeScript",
+          "icon": "📘"
+        },
+        {
+          "name": "React / Redux",
+          "icon": "⚛️"
+        },
+        {
+          "name": "Node.js",
+          "icon": "🟢"
+        },
+        {
+          "name": "Git / GitHub",
+          "icon": "📝"
+        },
+        {
+          "name": "Figma",
+          "icon": "🎨"
+        },
+        {
+          "name": "MongoDB",
+          "icon": "🍃"
+        },
+        {
+          "name": "Postman",
+          "icon": "📮"
+        }
+      ]
+    },
+    {
+      "category": "Soft Skills",
+      "skills": [
+        {
+          "name": "Quick learner",
+          "icon": "🚀"
+        },
+        {
+          "name": "Teamwork",
+          "icon": "🤝"
+        },
+        {
+          "name": "Responsible",
+          "icon": "✅"
+        },
+        {
+          "name": "Punctual",
+          "icon": "⏰"
+        }
+      ]
+    },
+    {
+      "category": "Languages",
+      "skills": [
+        {
+          "name": "English - pre-intermediate",
+          "icon": "🇬🇧"
+        },
+        {
+          "name": "Ukrainian - native",
+          "icon": "🇺🇦"
+        },
+        {
+          "name": "Russian - native",
+          "icon": "🇷🇺"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+.navigation {
+  margin-top: 2rem;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.nav-item {
+  width: 100%;
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.2rem;
+  background: rgba(0, 102, 204, 0.1);
+  border: 1px solid rgba(0, 102, 204, 0.2);
+  border-radius: 12px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-shadow: 0 0 3px #0066cc;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  width: 100%;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 102, 204, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.nav-button:hover::before {
+  left: 100%;
+}
+
+.nav-button:hover {
+  background: rgba(0, 102, 204, 0.2);
+  border-color: #0066cc;
+  transform: translateX(8px) scale(1.02);
+  box-shadow: 
+    0 0 15px rgba(0, 102, 204, 0.4),
+    0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-button.active {
+  background: linear-gradient(135deg, rgba(0, 102, 204, 0.3), rgba(0, 102, 204, 0.2));
+  border-color: #0066cc;
+  box-shadow: 
+    0 0 20px rgba(0, 102, 204, 0.5),
+    inset 0 0 15px rgba(0, 102, 204, 0.1),
+    0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateX(8px) scale(1.02);
+  position: relative;
+}
+
+.nav-button.active::after {
+  content: '';
+  position: absolute;
+  right: -2px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 60%;
+  background: #0066cc;
+  border-radius: 2px;
+  box-shadow: 0 0 10px #0066cc;
+}
+
+.nav-icon {
+  margin-right: 1rem;
+  font-size: 1.3rem;
+  min-width: 28px;
+  color: #0066cc;
+  text-shadow: 0 0 8px #0066cc;
+  transition: all 0.3s ease;
+}
+
+.nav-button:hover .nav-icon {
+  transform: scale(1.1) rotate(5deg);
+  text-shadow: 0 0 12px #0066cc;
+}
+
+.nav-button.active .nav-icon {
+  transform: scale(1.1);
+  text-shadow: 0 0 15px #0066cc;
+}
+
+.nav-label {
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-button:hover .nav-label {
+  color: #ffffff;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.nav-button.active .nav-label {
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+  font-weight: 600;
+}
+
+/* Адаптивний дизайн */
+@media (max-width: 768px) {
+  .navigation {
+    margin-top: 1.5rem;
+  }
+  
+  .nav-list {
+    gap: 0.6rem;
+  }
+  
+  .nav-button {
+    padding: 0.9rem 1rem;
+    border-radius: 10px;
+  }
+  
+  .nav-button:hover {
+    transform: translateX(5px) scale(1.01);
+  }
+  
+  .nav-button.active {
+    transform: translateX(5px) scale(1.01);
+  }
+  
+  .nav-icon {
+    font-size: 1.2rem;
+    margin-right: 0.8rem;
+    min-width: 24px;
+  }
+  
+  .nav-label {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navigation {
+    margin-top: 1rem;
+  }
+  
+  .nav-list {
+    gap: 0.5rem;
+  }
+  
+  .nav-button {
+    padding: 0.8rem 0.9rem;
+    border-radius: 8px;
+  }
+  
+  .nav-button:hover {
+    transform: translateX(3px) scale(1.005);
+  }
+  
+  .nav-button.active {
+    transform: translateX(3px) scale(1.005);
+  }
+  
+  .nav-icon {
+    font-size: 1.1rem;
+    margin-right: 0.7rem;
+    min-width: 22px;
+  }
+  
+  .nav-label {
+    font-size: 0.9rem;
+  }
+}

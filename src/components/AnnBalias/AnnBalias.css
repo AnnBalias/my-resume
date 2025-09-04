@@ -1,0 +1,222 @@
+.ann-balias {
+  padding: 1rem;
+  color: #e0e0e0;
+}
+
+.profile-section {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-image {
+  margin-bottom: 1rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 4px solid #0066cc;
+  box-shadow: 
+    0 0 15px #0066cc,
+    0 0 30px rgba(0, 102, 204, 0.5);
+  transition: all 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.avatar:hover {
+  transform: scale(1.05);
+  box-shadow: 
+    0 0 20px #0066cc,
+    0 0 40px rgba(0, 102, 204, 0.7);
+}
+
+.avatar-placeholder {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0066cc 0%, #004499 100%);
+  border: 4px solid #0066cc;
+  box-shadow: 
+    0 0 15px #0066cc,
+    0 0 30px rgba(0, 102, 204, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  animation: neon-pulse 2s ease-in-out infinite alternate;
+  margin: 0 auto;
+}
+
+@keyframes neon-pulse {
+  0% {
+    box-shadow: 
+      0 0 15px #0066cc,
+      0 0 30px rgba(0, 102, 204, 0.5);
+  }
+  100% {
+    box-shadow: 
+      0 0 20px #0066cc,
+      0 0 40px rgba(0, 102, 204, 0.7);
+  }
+}
+
+.name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 
+    0 0 5px #0066cc,
+    0 0 10px #0066cc;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.1rem;
+  margin: 0;
+  opacity: 0.9;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+}
+
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  padding: 0.3rem 0;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+}
+
+.contact-item:hover {
+  background: rgba(0, 102, 204, 0.1);
+  box-shadow: 0 0 10px rgba(0, 102, 204, 0.3);
+}
+
+.contact-icon {
+  margin-right: 0.8rem;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  color: #d0d0d0;
+  fill: currentColor;
+  filter: drop-shadow(0 0 5px #0066cc);
+  transition: all 0.3s ease;
+}
+
+.contact-item:hover .contact-icon {
+  filter: drop-shadow(0 0 8px #0066cc);
+  transform: scale(1.1);
+}
+
+.contact-item span:last-child,
+.contact-link {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  color: #d0d0d0;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-link:hover {
+  color: #0066cc;
+  text-shadow: 0 0 5px #0066cc;
+}
+
+.social-section {
+  margin-top: 2rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 102, 204, 0.1);
+  border: 2px solid rgba(0, 102, 204, 0.3);
+  border-radius: 50%;
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.social-link:hover {
+  background: rgba(0, 102, 204, 0.2);
+  border-color: #0066cc;
+  transform: translateY(-3px) scale(1.1);
+  box-shadow: 0 0 15px rgba(0, 102, 204, 0.4);
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  color: #d0d0d0;
+  fill: currentColor;
+  filter: drop-shadow(0 0 5px #0066cc);
+  transition: all 0.3s ease;
+}
+
+.social-link:hover .social-icon {
+  filter: drop-shadow(0 0 8px #0066cc);
+  transform: scale(1.1);
+}
+
+.social-name {
+  display: none;
+}
+
+/* Tooltip для назв соціальних мереж */
+.social-link::after {
+  content: attr(data-name);
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.social-link:hover::after {
+  opacity: 1;
+  visibility: visible;
+}

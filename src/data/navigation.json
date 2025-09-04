@@ -1,0 +1,22 @@
+{
+  "navItems": [
+    {
+      "id": "home",
+      "label": "Домашня",
+      "icon": "🏠",
+      "path": "/"
+    },
+    {
+      "id": "projects",
+      "label": "Проекти",
+      "icon": "💼",
+      "path": "/projects"
+    },
+    {
+      "id": "skills",
+      "label": "Скіли",
+      "icon": "⚡",
+      "path": "/skills"
+    }
+  ]
+}

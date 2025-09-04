@@ -1,42 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #1a1a1a;
+  color: #e0e0e0;
+  overflow-x: hidden;
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.App {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+  background: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Глобальні стилі для кнопок */
+button {
+  font-family: inherit;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Глобальні стилі для посилань */
+a {
+  text-decoration: none;
+  color: inherit;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.card {
-  padding: 2em;
+a:visited {
+  color: inherit;
 }
 
-.read-the-docs {
-  color: #888;
+a:hover {
+  color: inherit;
+}
+
+a:active {
+  color: inherit;
+}
+
+a:focus {
+  color: inherit;
+  outline: none;
+}
+
+/* Глобальні стилі для зображень */
+img {
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Глобальні стилі для всіх div елементів */
+div {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Глобальні стилі для всіх span елементів */
+span {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Глобальні стилі для всіх p елементів */
+p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Глобальні стилі для всіх h1-h6 елементів */
+h1, h2, h3, h4, h5, h6 {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Глобальні стилі для всіх ul, li елементів */
+ul, li {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Глобальні стилі для всіх input, textarea елементів */
+input, textarea {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Неонові ефекти */
+.neon-glow {
+  box-shadow: 
+    0 0 5px #0066cc,
+    0 0 10px #0066cc,
+    0 0 15px #0066cc,
+    0 0 20px #0066cc;
+}
+
+.neon-text {
+  text-shadow: 
+    0 0 5px #0066cc,
+    0 0 10px #0066cc,
+    0 0 15px #0066cc;
 }

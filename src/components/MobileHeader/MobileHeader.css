@@ -1,0 +1,172 @@
+/* Мобільна навігація */
+.mobile-header {
+  display: none; /* За замовчуванням прихована на десктопі */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(90deg, #2a2a2a 0%, #1f1f1f 100%);
+  border-bottom: 1px solid #0066cc;
+  box-shadow: 0 2px 10px rgba(0, 102, 204, 0.3);
+  z-index: 1000;
+  padding: 0 1rem;
+}
+
+.mobile-navigation {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.mobile-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  color: #d0d0d0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  min-width: 60px;
+  min-height: 50px;
+  justify-content: center;
+}
+
+.mobile-nav-item:hover {
+  background: rgba(0, 102, 204, 0.1);
+  color: #0066cc;
+  transform: translateY(-2px);
+}
+
+.mobile-nav-item.active {
+  background: rgba(0, 102, 204, 0.2);
+  color: #0066cc;
+  box-shadow: 0 0 10px rgba(0, 102, 204, 0.3);
+  transform: translateY(-2px);
+}
+
+.mobile-nav-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  border-radius: 8px;
+  min-width: 60px;
+  min-height: 50px;
+  justify-content: center;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.mobile-nav-button:hover {
+  background: rgba(0, 102, 204, 0.1);
+  color: #0066cc;
+  transform: translateY(-2px);
+}
+
+.mobile-nav-button.active {
+  background: rgba(0, 102, 204, 0.2);
+  color: #0066cc;
+  box-shadow: 0 0 10px rgba(0, 102, 204, 0.3);
+  transform: translateY(-2px);
+}
+
+.mobile-nav-icon {
+  font-size: 1.5rem;
+  color: inherit;
+  text-shadow: 0 0 5px currentColor;
+}
+
+.mobile-nav-label {
+  font-size: 0.7rem;
+  text-align: center;
+  line-height: 1;
+  color: inherit;
+  font-weight: 500;
+}
+
+/* Показуємо мобільну навігацію тільки на мобільних пристроях */
+@media (max-width: 768px) {
+  .mobile-header {
+    display: flex;
+  }
+  
+  .mobile-nav-list {
+    gap: 0.5rem;
+  }
+  
+  .mobile-nav-item {
+    min-width: 50px;
+    min-height: 45px;
+    padding: 0.4rem;
+  }
+  
+  .mobile-nav-button {
+    min-width: 50px;
+    min-height: 45px;
+    padding: 0.4rem;
+  }
+  
+  .mobile-nav-icon {
+    font-size: 1.3rem;
+  }
+  
+  .mobile-nav-label {
+    font-size: 0.6rem;
+  }
+}
+
+/* Адаптивність для дуже маленьких екранів */
+@media (max-width: 480px) {
+  .mobile-header {
+    height: 55px;
+    padding: 0 0.5rem;
+  }
+  
+  .mobile-nav-list {
+    gap: 0.3rem;
+  }
+  
+  .mobile-nav-item {
+    min-width: 45px;
+    min-height: 40px;
+    padding: 0.3rem;
+  }
+  
+  .mobile-nav-button {
+    min-width: 45px;
+    min-height: 40px;
+    padding: 0.3rem;
+  }
+  
+  .mobile-nav-icon {
+    font-size: 1.2rem;
+  }
+  
+  .mobile-nav-label {
+    font-size: 0.55rem;
+  }
+}
+

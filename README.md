@@ -1,12 +1,80 @@
-# React + Vite
+# My Resume - Ann Balias
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Сучасне резюме-портфоліо, створене з React та адаптивним дизайном.
 
-Currently, two official plugins are available:
+## Особливості
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎨 Сучасний та елегантний дизайн
+- 📱 Повністю адаптивний (до 1440px та мобільні пристрої)
+- 🏠 Домашня сторінка з привітанням
+- 💼 Сторінка проектів з прикладами робіт
+- ⚡ Сторінка скілів з прогрес-барами
+- 🔍 Сторінка 404 для неіснуючих маршрутів
+- 🎯 Компонентний підхід з React
 
-## Expanding the ESLint configuration
+## Структура проекту
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+src/
+├── components/          # Переиспользуемые компоненты
+│   ├── AnnBalias.jsx   # Компонент з фото та контактами
+│   ├── AnnBalias.css
+│   ├── Navigation.jsx  # Компонент навігації
+│   └── Navigation.css
+├── pages/              # Сторінки додатку
+│   ├── Home.jsx        # Домашня сторінка
+│   ├── Home.css
+│   ├── Projects.jsx    # Сторінка проектів
+│   ├── Projects.css
+│   ├── Skills.jsx      # Сторінка скілів
+│   ├── Skills.css
+│   ├── NotFound.jsx    # Сторінка 404
+│   └── NotFound.css
+├── layouts/            # Layout компоненти
+│   ├── MainLayout.jsx  # Основний layout
+│   └── MainLayout.css
+└── App.jsx             # Головний компонент
+```
+
+## Запуск проекту
+
+1. Встановіть залежності:
+
+```bash
+npm install
+```
+
+2. Запустіть проект в режимі розробки:
+
+```bash
+npm run dev
+```
+
+3. Відкрийте браузер та перейдіть за адресою `http://localhost:5173`
+
+## Технології
+
+- React 19
+- Vite
+- CSS3 з адаптивним дизайном
+- JavaScript ES6+
+
+## Адаптивність
+
+- **1440px+**: Повноекранний режим з центруванням
+- **1024px-1440px**: Адаптивний layout
+- **768px-1024px**: Вертикальне розташування
+- **<768px**: Мобільна версія
+
+## Налаштування
+
+Для зміни контенту відредагуйте відповідні компоненти:
+
+- `src/components/AnnBalias.jsx` - особиста інформація
+- `src/pages/Home.jsx` - домашня сторінка
+- `src/pages/Projects.jsx` - проекти
+- `src/pages/Skills.jsx` - скіли
+
+## Ліцензія
+
+MIT
